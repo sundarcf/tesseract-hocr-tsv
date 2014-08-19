@@ -1,0 +1,6 @@
+<h1>Tesseract-OCR</h1>
+<p>Upload an image file to have OCR perfomed on it and get hocr output in tsv format.</p>
+<%= form_tag({controller: "upload", action: "index_post"}, method: "post", :enctype=>"multipart/form-data") do %>
+  <%= file_field 'upload', 'file' %>
+  <%= submit_tag("Submit") %>
+<% end %>
